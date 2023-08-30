@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.popup-wrapper{
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+}
+
+.popup{
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    background: white;
+    position: relative;
+    border-radius: 20px;
+}
+
+.popup-close {
+    font-size: 28px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.disapprovedImg{
+    background-image: url(./img-icons/bad.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center top;
+    padding: 80px;
+}
+
+.disapproved{
+    font-size: 20px;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.approvedImg {
+    background-image: url(./img-icons/aprovado.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center top;
+    padding: 80px;
+}
+
+.approved{
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}

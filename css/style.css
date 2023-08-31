@@ -69,7 +69,6 @@ h2{
     margin: auto;
     padding: 10px;
 
-   
     border-color: black;
     cursor: pointer;
     border-radius: 10px;
@@ -97,4 +96,34 @@ h2{
 .btn_submitForm:hover{
     background: black;
     color: #ffcc3f;  
+}
+
+/* Footer CSS */
+.main-footer{
+    text-align: center;
+    background: #ffcc3f;
+    color: black;
+    padding: 10PX 0;
+    margin: 0;
+}
+
+.main-footer h3{
+    margin: 0;
+}
+
+a:link{
+    text-decoration: none;
+    margin: 0;
+}
+
+.main-footer img{
+    max-width: 40px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 0.3rem;
+}
+
+.main-footer img:hover{
+    filter: brightness(0) saturate(100%) invert(90%) sepia(100%) saturate(28%) hue-rotate(253deg) brightness(109%) contrast(100%);
+    
 }

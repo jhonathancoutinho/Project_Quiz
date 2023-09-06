@@ -9,14 +9,7 @@ const pImg = document.querySelector('.backgroundResult')
 
 const respostArray =['A','C','D','B','B','A','D','C','A','D']
 
-
-inputForm.addEventListener('submit', event =>{
-    event.preventDefault()
-
-    popup.style.display = 'block'
-
-    let score = 0
-
+const getUserAnswers = () => {
     const userAnswers = [
         inputForm.inputQuestion1.value, 
         inputForm.inputQuestion2.value, 
@@ -27,13 +20,27 @@ inputForm.addEventListener('submit', event =>{
         inputForm.inputQuestion7.value, 
         inputForm.inputQuestion8.value, 
         inputForm.inputQuestion9.value, 
-        inputForm.inputQuestion10.value]
+        inputForm.inputQuestion10.value
+    ] 
+    return userAnswers
+}
+
+
+inputForm.addEventListener('submit', event =>{
+    event.preventDefault()
+
+    popup.style.display = 'block'
+
+    let score = 0
+
+    const userAnswers = getUserAnswers()
 
     userAnswers.forEach((userAnswers, index) =>{
         if(userAnswers === respostArray[index]){
             score += 10
         }
     })
+
     if(score < 70) {
         pImg.setAttribute ('class', 'disapprovedImg')
         p.setAttribute ('class', 'disapproved')

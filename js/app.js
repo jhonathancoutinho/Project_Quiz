@@ -35,7 +35,7 @@ inputForm.addEventListener('submit', event =>{
 
     const userAnswers = getUserAnswers()
 
-    userAnswers.forEach((userAnswers, index) =>{
+    userAnswers.map((userAnswers, index) =>{
         if(userAnswers === respostArray[index]){
             score += 10
         }
